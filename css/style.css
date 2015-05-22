@@ -1,0 +1,23 @@
+table{
+	border-collapse: collapse;
+}
+tbody{
+	border-top:1px solid;
+	border-bottom:1px solid;
+}
+tr.pub, tr.pub>td{
+	border-top:1px solid;
+}
+
+td{
+	vertical-align: top;
+}
+
+.qrcode{
+	display:none;
+	position: absolute;
+	overflow:visible;
+	border:1px solid;
+	padding:50px;
+	background:white;
+}
