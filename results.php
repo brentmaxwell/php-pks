@@ -1,9 +1,9 @@
 <html>
 	<head>
 		<title>Search Results for '<?php echo $query;?>'</title>
-		<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
-		<script type="text/javascript" src="/js/jquery.min.js"></script>
-		<script type="text/javascript" src="/js/jquery.qrcode.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
 	</head>
 	<body>
 		<h1>Search Results for '<?php echo $query;?>'</h1>
