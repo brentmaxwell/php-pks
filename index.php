@@ -4,7 +4,7 @@ require_once('keyserver.php');
 
 $keyserver = new hksKeyServer();
 
-if (preg_match("/lookup\?(.*)",$_SERVER['REQUEST_URI'],$regs)) {
+if (preg_match("/lookup\?(.*)/",$_SERVER['REQUEST_URI'],$regs)) {
 	parse_str($regs[1],$vars);
 	if ($vars['op'] == 'get') {
 		$query = $vars['search'];
@@ -23,11 +23,11 @@ if (preg_match("/lookup\?(.*)",$_SERVER['REQUEST_URI'],$regs)) {
 	}
 }
 
-else if (preg_match("/key/(.*)",$_SERVER['REQUEST_URI'],$regs)) {
+else if (preg_match("/key\/(.*)/",$_SERVER['REQUEST_URI'],$regs)) {
 	$keyid = $regs[1];
 	$keyserver->get($keyid);
 }
-else if (preg_match("/add",$_SERVER['REQUEST_URI'])) {
+else if (preg_match("/add/",$_SERVER['REQUEST_URI'])) {
 	$result = $keyserver->add($_POST['keytext']);
 	if($_REQUEST['addkey'] == 'Submit'){
 		$pagedata = array(
@@ -37,7 +37,7 @@ else if (preg_match("/add",$_SERVER['REQUEST_URI'])) {
 	}
 }
 else {
-	include('form.php');
+		include('form.php');
 }
 
 ?>
