@@ -1,0 +1,14 @@
+gpg: WARNING: unsafe ownership on homedir '/var/www/pki/php-pks/data'
+gpg: keybox '/var/www/pki/php-pks/data/pubring.kbx' created
+gpg: key 755D89895912D6FA: 4 signatures not checked due to missing keys
+gpg: /var/www/pki/php-pks/data/trustdb.gpg: trustdb created
+gpg: key 755D89895912D6FA: public key "Brent Maxwell <brent@thebrent.net>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: no ultimately trusted keys found
+gpg: WARNING: unsafe ownership on homedir '/var/www/pki/php-pks/data'
+gpg: WARNING: unsafe ownership on homedir '/var/www/pki/php-pks/data'
+gpg: WARNING: unsafe ownership on homedir '/var/www/pki/pks/data'
+gpg: WARNING: unsafe ownership on homedir '/var/www/pki/pks/data'
+gpg: WARNING: unsafe ownership on homedir '/var/www/pki/pks/data'
+gpg: WARNING: unsafe ownership on homedir '/var/www/pki/pks/data'
